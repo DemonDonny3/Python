@@ -1,0 +1,2 @@
+def Core():
+    return
