@@ -4,7 +4,8 @@ from Utility.Library.InputChek import *
 
 # Configuration for the program
 config = {
-    "players": ["X ", "O "],    # Players's characters
+    "level": 3,
+    "players": [" X ", " O "],    # Players's characters
     "autoPlay": True,           # Switch fro plaing with pc or other player
     "visible": True,            # Difficult mode, you can't see the game table
     "save": []                  # File path where to save the match
@@ -35,7 +36,7 @@ def AskStart() -> dict:
                           "N) No;\n",
                           ["Y", "N"],
                           "")
-    if(start == "Y"):
+    if(start == "N"):
         config["visible"] = False
 
     start = InputChekList("Select if you want to save the process or not, type for:\n" +            # Decides if he wants to save the game
@@ -48,4 +49,6 @@ def AskStart() -> dict:
         start = InputCheckFile("Tell me the file name, the file extension (.txt) will be added automatically")
         path += start[0]
         config["save"] = [path, start[1]]
+    
+    print("\n")
     return config

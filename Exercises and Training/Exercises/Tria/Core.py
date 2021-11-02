@@ -3,21 +3,21 @@ from Utility.Library.InputChek import *
 import random
 
 # Game's table
-table = [[["01", "02", "03"],
-          ["04", "  ", "05"],
-          ["06", "07", "08"]],
+table = [[["001", "002", "003"],
+          ["004", "000", "006"],
+          ["007", "008", "009"]],
 
-         [["11", "12", "13"],
-          ["14", "  ", "15"],
-          ["16", "17", "18"]],
+         [["011", "012", "013"],
+          ["014", "000", "016"],
+          ["017", "018", "019"]],
 
-         [["21", "22", "23"],
-          ["24", "  ", "25"],
-          ["26", "27", "28"]]
-        ]
+         [["021", "022", "023"],
+          ["024", "000", "026"],
+          ["027", "028", "029"]]
+         ]
 
 # List of free position
-freePosition = [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 28, 29]
+freePosition = [1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 26, 27, 28, 29]
 
 
 # The method that contain the logic of the solution
@@ -32,15 +32,14 @@ def Core(config:  dict) -> str:
 # config: Configuration maid by Start.py
 def Game(config:  dict) -> str:
     char = config["players"][0]
-    end = ""
+    end = " "
 
-    for j in table:
-        print(j)
+    print(Record(config["level"]))
 
     if(config["save"]):
         file = open(config["save"][0], config["save"][1])
 
-    while not end:
+    while (freePosition != [] and end == " "):
         if(len(freePosition) % 2 == 1 and config["autoPlay"]):              # Check if the auto play is set
             position = random.choice(freePosition)
             print(position)
@@ -49,21 +48,17 @@ def Game(config:  dict) -> str:
                                            freePosition,
                                            "This position is not free")
 
-        level = str(position)[1]
-        column = str(position)[0] / 3
-        row = str(position)[0] % 3
-        table[int(level)][int(column)][int(row)] = char
+        level = position / 10 - 0.5
+        row = (position % 10 -1) / 3
+        cell = (position % 10 - 1) % 3
+        table[round(level)][int(row)][int(cell)] = char
 
-        char = config["players"][len(freePosition) % 2]                     # Switch to the other player
+        char = config["players"][int((len(freePosition) +1) % 2)]                 # Switch to the other player
         freePosition.remove(position)                                       # Remove the position occuped from the available
 
         result = ""
-        if(config["visible"] or config["save"]):                            # If is set to write o save, it create a unique string
-            for i in table:
-                result += "["
-                for l in i:
-                    result += "[" + str(l) + "]"
-                result += "]\n"
+        if (config["visible"] or config["save"]):                            # If is set to write o save, it create a unique string
+            result = Record(config["level"])
 
         if(config["visible"]):                                              # If is set to write on screen
             print(result)
@@ -78,16 +73,45 @@ def Game(config:  dict) -> str:
 
     return end
 
+def Record(level:  int) -> str:
+    result = ""
+    for j in range(level):
+        result += "\t" * j
+        result += table[j][0][0]
+        result += "\t" * (level - j)
+        result += table[j][0][1]
+        result += "\t" * (level - j)
+        result += table[j][0][2]
+        result += "\n"
+
+    for l in range(3):
+        result += table[l][1][0] + "\t"
+    result += "\t"
+    for l in range(3):
+        result += table[l][1][2] + "\t"
+    result += "\n"
+
+    j = level -1
+    while (j >= 0):
+        result += "\t" * j
+        result += table[j][2][0]
+        result += "\t" * (level - j)
+        result += table[j][2][1]
+        result += "\t" * (level - j)
+        result += table[j][2][2]
+        result += "\n"
+        j -= 1
+
+    result += "\n"
+    return result
+
 
 # Check() checks for every chance of winning
 # Return:
 # ""        = Game not finish
-# " "       = Draw
 # playerChar= There is a winner
 def Check() -> str:
-    result = ""
-
-    for i in table:
+    for i in range(len(table) - 1):
         for l in range(3):
             result = Test(table[i][l][0], table[i][l][1], table[i][l][2])    # Row chek
             if result:
@@ -96,6 +120,7 @@ def Check() -> str:
             result = Test(table[i][0][l], table[i][1][l], table[i][2][l])    # Column chek
             if result:
                 return result
+            l += 1
 
     for j in range(3):
         if j != 1:
@@ -106,10 +131,7 @@ def Check() -> str:
             if result:
                 return result
 
-    if freePosition == []:
-        result = " "
-
-    return result
+    return " "
 
 
 # Test () actually tests the completion of three aligned points
