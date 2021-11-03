@@ -1,2 +1,2 @@
-def Core():
+def Core(config:  dict) -> str:
     return

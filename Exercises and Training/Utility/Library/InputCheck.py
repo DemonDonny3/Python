@@ -15,7 +15,7 @@ class MyError2(Error):
 
 
 # Check if the imput have the specific length
-def InputChekLength(message: str, check: list[str], length: int):
+def InputCheckLength(message: str, check: list[str], length: int):
     while (True):
         try:
             string = input(message)
@@ -35,11 +35,12 @@ def InputChekLength(message: str, check: list[str], length: int):
             print("You have insert " + len(string) + " character!")
         except:
             print("This is not an acceptable character!")
+    print()
     return string
 
 
 # Check the input based on the list given in input
-def InputChekList(message: str, check: list[str], error: str):
+def InputCheckList(message: str, check: list[str], error: str):
     while (True):
         try:
             string = input(message).upper()
@@ -54,22 +55,34 @@ def InputChekList(message: str, check: list[str], error: str):
                 print("This caracter is non accptable, you can select only:")
             for l in check:
                 print(l)
+    print()
     return string
 
 
+# Check the input based on the list given in input
+def InputCheckBool(message: str, check: list[str], error: str):
+    result = True
+    s = InputCheckList(message, check, error)
+    if (s == "N"):
+        result = False
+    print()
+    return result
+
+
 # Check input only number
-def InputChekNumber(message: str):
+def InputCheckNumber(message: str):
     while (True):
         try:
             number = int(input(message))
             break
         except:
             print("That's not a number!")
+    print()
     return number
 
 
 # Check if the input is an number
-def InputChekNumberList(message: str, check: list[int], error: str):
+def InputCheckNumberList(message: str, check: list[int], error: str):
     while (True):
         try:
             n = int(input(message))
@@ -82,6 +95,7 @@ def InputChekNumberList(message: str, check: list[int], error: str):
                 print(i)
         except:
             print("This is not a number!")
+    print()
     return n
 
 
@@ -95,6 +109,7 @@ def InputCheckPath(message: str):
             break
         except:
             print("The folder location: "+ p + " does not exist, enter a valid path")
+    print()
     return p
 
 
@@ -113,7 +128,7 @@ def InputCheckFile(message: str):
 
             start = 1
             if path.exists(p):
-                start = InputChekNumberList("In the folder there is already a file with the same name, how you want to proceed:\n" +
+                start = InputCheckNumberList("In the folder there is already a file with the same name, how you want to proceed:\n" +
                                             "1) Overwrite it;\n" +
                                             "2) Add to the end of the file;\n"+
                                             "3) Change file\n"
@@ -130,4 +145,5 @@ def InputCheckFile(message: str):
             print("Tell me the file name")
         except:
             print("The folder location: "+ p + " does not exist, enter a valid path!")
+    print()
     return p

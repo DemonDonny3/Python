@@ -1,6 +1,6 @@
-from Start import *
-from Core import *
-from End import *
+from Start import Start
+from Core import Core
+from End import End
 
 
 # Main of the body
@@ -11,4 +11,4 @@ def Main():
     return
 
 
-Main()
+Main()                      # Start of the program
