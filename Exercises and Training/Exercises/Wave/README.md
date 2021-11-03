@@ -1,6 +1,6 @@
 # Wave project
 ## Exigency
-Write a program to draw a wave in a recursive and non-recursive way
+Write An algorithm to draw a wave in a recursive and non-recursive way
 
 ## Features
 

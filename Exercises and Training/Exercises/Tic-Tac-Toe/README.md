@@ -1,6 +1,6 @@
 # Tic-Tac-Toe project
 ## Exigency
-Have a basic file structure and code for all projects for an easier start
+Program an algorithm that replicates the game of tic tac toe:
 - You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
 - The first player to gets a full set of her marks in a row (up, down, across, or diagonally) is the winner.
 

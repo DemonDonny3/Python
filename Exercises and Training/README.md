@@ -27,40 +27,15 @@ No plugins have been used
 📂Exercises and Training
  ┣📂Exercises
  ┃ ┣📂Auction prediction
- ┃ ┃ ┣📜Core.py
- ┃ ┃ ┣📜End.py
- ┃ ┃ ┣📜Main.py
- ┃ ┃ ┣📜README.md
- ┃ ┃ ┗📜Start.py
  ┃ ┣📂Frogs game
- ┃ ┃ ┣📜Core.py
- ┃ ┃ ┣📜End.py
- ┃ ┃ ┣📜Main.py
- ┃ ┃ ┣📜README.md
- ┃ ┃ ┗📜Start.py
  ┃ ┣📂Tic-Tac-Toe
- ┃ ┃ ┣📜Core.py
- ┃ ┃ ┣📜End.py
- ┃ ┃ ┣📜Main.py
- ┃ ┃ ┣📜README.md
- ┃ ┃ ┗📜Start.py
  ┃ ┣📂Tria
- ┃ ┃ ┣📜Core.py
- ┃ ┃ ┣📜End.py
- ┃ ┃ ┣📜Main.py
- ┃ ┃ ┣📜README.md
- ┃ ┃ ┗📜Start.py
  ┃ ┣📂Wave
- ┃ ┃ ┣📜Core.py
- ┃ ┃ ┣📜End.py
- ┃ ┃ ┣📜Main.py
- ┃ ┃ ┣📜README.md
- ┃ ┃ ┗📜Start.py
  ┃ ┗📜.gitignore
  ┣📂Utility
  ┃ ┣📂Library
  ┃ ┃   ┗📜InputCheck.py
- ┃ ┗ 📂Utility
+ ┃ ┗ 📂Template
  ┃    ┣📜Core.py
  ┃    ┣📜End.py
  ┃    ┣📜Main.py
@@ -81,7 +56,7 @@ Have a single place to keep the custom method library and project templates
 ## Scheduled future commits
 > Project: Task
 
-- Exercise Code comment and feature unlock
+- Exercise: Code comment and feature unlock
 - Auction prediction: README.md: Exigency update
 - Frogs game: Fix AskStart and Add Recursive solution
 - Wave: Non-recursive solution

@@ -1,6 +1,6 @@
 # Tria project
 ## Exigency
-Have a basic file structure and code for all projects for an easier start
+Program an algorithm that replicates the tria game
 
 ## Features
 

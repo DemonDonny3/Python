@@ -1,6 +1,6 @@
-# Frogs game project
+# Puzzle jumping frogs game project
 ## Exigency
-Write an algorithm that solves the frog game:
+Write an algorithm that solves the puzzle of jumping frogs:
 - Given a series of two different types of frogs and spaces solve the puzzle
 - The left set of counters can only move right, the right set of counters can only move left.
 - Counters can move forward one space, or move two spaces by jumping over another counter.
@@ -23,14 +23,14 @@ The technologies used are:
 Download the project
 
 ```
-wget https://github.com/DemonDonny3/Python/tree/main/Exercises%20and%20Training/Exercises/Frogs%20game
+wget https://github.com/DemonDonny3/Python/tree/main/Exercises%20and%20Training/Exercises/Puzzle%20jumping%20frogs
 ```
 
 ## Usage
 Enter in the folder:
 
 ```
-cd "Frogs game"
+cd "Puzzle jumping frogs"
 ```
 
 Run the script:
@@ -44,7 +44,7 @@ No plugins have been used
 
 ## File structur
 ```
-📂Frogs game
+📂Puzzle jumping frogs
  ┣📜Core.py
  ┣📜End.py
  ┣📜Main.py

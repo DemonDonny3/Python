@@ -26,35 +26,10 @@ No plugins have been used
 ```
 📂Exercises
  ┣📂Auction prediction
- ┃ ┣📜Core.py
- ┃ ┣📜End.py
- ┃ ┣📜Main.py
- ┃ ┣📜README.md
- ┃ ┗📜Start.py
  ┣📂Frogs game
- ┃ ┣📜Core.py
- ┃ ┣📜End.py
- ┃ ┣📜Main.py
- ┃ ┣📜README.md
- ┃ ┗📜Start.py
  ┣📂Tic-Tac-Toe
- ┃ ┣📜Core.py
- ┃ ┣📜End.py
- ┃ ┣📜Main.py
- ┃ ┣📜README.md
- ┃ ┗📜Start.py
  ┣📂Tria
- ┃ ┣📜Core.py
- ┃ ┣📜End.py
- ┃ ┣📜Main.py
- ┃ ┣📜README.md
- ┃ ┗📜Start.py
  ┣📂Wave
- ┃ ┣📜Core.py
- ┃ ┣📜End.py
- ┃ ┣📜Main.py
- ┃ ┣📜README.md
- ┃ ┗📜Start.py
  ┗📜.gitignore
 ```
 
@@ -62,16 +37,16 @@ No plugins have been used
 #### Auction prediction
 
 
-#### Frogs game
-
+#### Puzzle jumping frogs game
+An algorithm that solves the puzzle of jumping frogs
 
 #### Tic-Tac-Toe
-
+An algorithm that replicates the game of tic tac toe
 
 #### Tria
-
+An algorithm that replicates the tria game
 
 #### Wave
-
+An algorithm to draw a wave in a recursive and non-recursive way
 
 ## License
