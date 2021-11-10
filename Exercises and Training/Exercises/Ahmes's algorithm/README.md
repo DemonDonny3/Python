@@ -1,11 +1,9 @@
-# Project template
+# Ahmes's algorithm project
 ## Exigency
-Have a basic file structure and code for all projects for an easier start
+Program an algorithm that calculates the multiplication of two numbers between Ahmes's algorithm
 
 ## Features
 
-- Basic structure of the code
-- Minimum common code entered
 - Have a base config set in Start.py
 - Select whether to see the processing process
 - Select if and where to save the process
@@ -26,7 +24,7 @@ wget https://github.com/DemonDonny3/Python/tree/main/Exercises%20and%20Training/
 Enter in the folder:
 
 ```
-cd Template
+cd Ahmes's algorithm
 ```
 
 Run the script:
@@ -40,7 +38,7 @@ No plugins have been used
 
 ## File structur
 ```
-📂Template
+📂Ahmes's algorithm
  ┣📜Core.py
  ┣📜End.py
  ┣📜LICENSE

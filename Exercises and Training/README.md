@@ -26,6 +26,7 @@ No plugins have been used
 ```
 📂Exercises and Training
  ┣📂Exercises
+ ┃ ┣📂Ahmes's algorithm
  ┃ ┣📂Auction prediction
  ┃ ┣📂Frogs game
  ┃ ┣📂Tic-Tac-Toe

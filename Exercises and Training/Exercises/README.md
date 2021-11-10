@@ -25,6 +25,7 @@ No plugins have been used
 ## File structur
 ```
 📂Exercises
+ ┣📂Ahmes's algorithm
  ┣📂Auction prediction
  ┣📂Frogs game
  ┣📂Tic-Tac-Toe
