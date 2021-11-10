@@ -32,6 +32,7 @@ No plugins have been used
 ```
 📂Library
  ┣📜InputCheck.py
+ ┣📜LICENSE
  ┗📜README.md
 ```
 
@@ -40,3 +41,4 @@ No plugins have been used
 Contiene tutti i metodi per controllare i file
 
 ## License
+GNU Affero General Public License v3.0

@@ -45,6 +45,7 @@ No plugins have been used
 📂Auction prediction
  ┣📜Core.py
  ┣📜End.py
+ ┣📜LICENSE
  ┣📜Main.py
  ┣📜README.md
  ┗📜Start.py
@@ -64,3 +65,4 @@ The Core.py is the file that contains all the methods for data processing
 The End.py file contains the final methods for running the program
 
 ## License
+GNU Affero General Public License v3.0

@@ -36,14 +36,18 @@ No plugins have been used
  ┣📂Utility
  ┃ ┣📂Library
  ┃ ┃ ┣📜InputCheck.py
+ ┃ ┃ ┣📜LICENSE
  ┃ ┃ ┗📜README.md
- ┃ ┗ 📂Template
- ┃    ┣📜Core.py
- ┃    ┣📜End.py
- ┃    ┣📜Main.py
- ┃    ┣📜README.md
- ┃    ┗📜Start.py
+ ┃ ┣📂Template
+ ┃ ┃ ┣📜Core.py
+ ┃ ┃ ┣📜End.py
+ ┃ ┃ ┣📜LICENSE
+ ┃ ┃ ┣📜Main.py
+ ┃ ┃ ┣📜README.md
+ ┃ ┃ ┗📜Start.py
+ ┃ ┗📜README.md
  ┣📜.gitignore
+ ┣📜LICENSE
  ┗📜README.md
 ```
 
@@ -66,6 +70,6 @@ Have a single place to keep the custom method library and project templates
 - Tic-Tac-Toe: Variable size table
 - Utility: new project Test
 - Training: From number 0 to number 30
-- Exercises and Training: Adding license
 
 ## License
+GNU Affero General Public License v3.0
