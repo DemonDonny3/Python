@@ -1,8 +1,9 @@
-def End():
-    Ending()
+def End(result: str):
+    Ending(result)
     return
 
 
 # Method use for taking the initial config
-def Ending():
+def Ending(result: str):
+    print(result)
     return 
