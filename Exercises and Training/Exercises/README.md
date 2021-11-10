@@ -30,7 +30,8 @@ No plugins have been used
  ┣📂Tic-Tac-Toe
  ┣📂Tria
  ┣📂Wave
- ┗📜.gitignore
+ ┣📜.gitignore
+ ┗📜README.md
 ```
 
 ### File task

@@ -1,5 +1,5 @@
 # Custom utility maid by Riccardo Donadel
-from Utility.Library.InputChek import *
+from Utility.Library.InputCheck import *
 import random
 
 # Game's table
@@ -36,7 +36,7 @@ def Game(config:  dict) -> str:
             position = random.choice(freePosition)
             print(position)
         else:
-            position = InputChekNumberList("Select the position:\n",        # Take the next move
+            position = InputCheckNumberList("Select the position:\n",        # Take the next move
                                            freePosition,
                                            "This position is not free")
 
