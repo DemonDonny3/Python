@@ -15,7 +15,7 @@ wget https://github.com/DemonDonny3/Python/tree/main/Exercises%20and%20Training
 ```
 
 ## Usage
-Enter in the folder:
+Enter in the folder
 
 Take wath you need and using
 
@@ -34,7 +34,8 @@ No plugins have been used
  ┃ ┗📜.gitignore
  ┣📂Utility
  ┃ ┣📂Library
- ┃ ┃   ┗📜InputCheck.py
+ ┃ ┃ ┣📜InputCheck.py
+ ┃ ┃ ┗📜README.md
  ┃ ┗ 📂Template
  ┃    ┣📜Core.py
  ┃    ┣📜End.py
@@ -56,16 +57,14 @@ Have a single place to keep the custom method library and project templates
 ## Scheduled future commits
 > Project: Task
 
-- Exercise: Code comment and feature unlock
-- Auction prediction: README.md: Exigency update
-- Frogs game: Fix AskStart and Add Recursive solution
+- Exercises: Code comment and feature unlock
+- Puzzle jumping frogs: Fix AskStart and Add Recursive solution
 - Wave: Non-recursive solution
 - Exercise: New project Matrices
 - Exercise: New project Battleship
 - Tic-Tac-Toe: Variable size table
 - Utility: new project Test
-- 0-30
-- deciding
-- mail
+- Training: From number 0 to number 30
+- Exercises and Training: Adding license
 
 ## License

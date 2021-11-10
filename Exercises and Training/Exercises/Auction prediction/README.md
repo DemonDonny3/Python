@@ -1,6 +1,6 @@
 # Auction prediction project
 ## Exigency
-
+Program an algorithm that evolves and is able to predict a winning result of an auction
 
 ## Features
 

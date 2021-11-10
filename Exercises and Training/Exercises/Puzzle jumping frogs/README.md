@@ -1,4 +1,4 @@
-# Puzzle jumping frogs game project
+# Puzzle jumping frogs project
 ## Exigency
 Write an algorithm that solves the puzzle of jumping frogs:
 - Given a series of two different types of frogs and spaces solve the puzzle
