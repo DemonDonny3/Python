@@ -52,3 +52,4 @@ An algorithm that replicates the tria game
 An algorithm to draw a wave in a recursive and non-recursive way
 
 ## License
+GNU Affero General Public License v3.0

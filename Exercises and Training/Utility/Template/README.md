@@ -57,21 +57,26 @@ No plugins have been used
  ┣📜LICENSE
  ┣📜Main.py
  ┣📜README.md
- ┗📜Start.py
+ ┣📜Start.py
+ ┗📜StartConfig.py
 ```
 
 ### File task
+#### Core.py
+The Core.py is the file that contains all the methods for data processing
+
+#### End.py
+The End.py file contains the final methods for running the program
+
 #### Main.py
 In the Main.py file the methods of the various files are put together and ordered for the resolution of the job
 
 #### Start.py
 The Start.py file contains all the methods for entering the request configuration files
 
-#### Core.py
-The Core.py is the file that contains all the methods for data processing
+#### SStartConfigtart.py
+The StartConfig.py file contains the standard configuration
 
-#### End.py
-The End.py file contains the final methods for running the program
 
 ## License
 GNU Affero General Public License v3.0

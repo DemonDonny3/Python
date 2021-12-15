@@ -31,14 +31,17 @@ No plugins have been used
 ## File structur
 ```
 📂Library
+ ┣📜AskForEnd.py
  ┣📜InputCheck.py
  ┣📜LICENSE
  ┗📜README.md
 ```
 
 ### File task
+#### AskForEnd.py
+Contains the method for asking how to expose the results of the process
 #### InputCheck.py
-Contiene tutti i metodi per controllare i file
+Contains all methods for checking user inputs
 
 ## License
 GNU Affero General Public License v3.0
