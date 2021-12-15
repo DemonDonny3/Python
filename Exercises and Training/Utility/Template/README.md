@@ -6,6 +6,7 @@ Have a basic file structure and code for all projects for an easier start
 
 - Basic structure of the code
 - Minimum common code entered
+- ----------------------------------------------------------------
 - Have a base config set in Start.py
 - Select whether to see the processing process
 - Select if and where to save the process
@@ -27,6 +28,16 @@ Enter in the folder:
 
 ```
 cd Template
+```
+
+Download the [Utility's Library](https://github.com/DemonDonny3/Python/tree/main/Exercises%20and%20Training/Utility/Library):
+```
+wget https://github.com/DemonDonny3/Python/tree/main/Exercises%20and%20Training/Utility/Library
+```
+
+Import the Utility's Librarylity:
+```
+mv Library Template
 ```
 
 Run the script:

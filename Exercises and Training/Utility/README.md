@@ -36,6 +36,7 @@ No plugins have been used
  ┣📂Template
  ┃ ┣📜Core.py
  ┃ ┣📜End.py
+ ┃ ┣📜LICENSE
  ┃ ┣📜Main.py
  ┃ ┣📜README.md
  ┃ ┗📜Start.py
@@ -50,3 +51,4 @@ A library to contain all the custom methods divided by utility in various files
 A basic file structure and code for all projects for an easier start
 
 ## License
+GNU Affero General Public License v3.0

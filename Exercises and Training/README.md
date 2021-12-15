@@ -1,4 +1,4 @@
-# 📂Exercises and Training
+# Exercises and Training
 ## Exigency
 Have a single place to hold all assigned python projects and utility material developed during the various projects and made reusable
 
@@ -63,7 +63,6 @@ Have a single place to keep the custom method library and project templates
 ## Scheduled future commits
 | Project               | Task              | Description                                               |
 | --------------------- | ----------------- | --------------------------------------------------------- |
-| Utility               | Update            | New feature and code comment                              |
 | Exercise              | New project       | Zoo                                                       |
 | Wave                  | Feature update    | Update to the Template project and Non-recursive solution |
 | Tria                  | Feature update    | Update to the Template project                            |
