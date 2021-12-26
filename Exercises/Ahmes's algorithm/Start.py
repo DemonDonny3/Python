@@ -1,10 +1,10 @@
-from Utility.Library.InputCheck import *     # Import the custom library for checking the input
+from Library.InputCheck import *     # Import the custom library for checking the input
 
 # Base config
 config = {
-    "number": [5, 7],
-    "visible": True,
-    "save": []
+    "number": [5, 7],   # The stock numbers
+    "visible": True,    # Writing on the screen
+    "save": []          # Path for writing to file
 }
 
 
@@ -30,7 +30,7 @@ def AskStart():
                           "N) No;\n",
                           ["Y", "N"],
                           "")
-    if(not start):                                                               # If the user don't want to use the standard numbers
+    if(not start):                                                                  # If the user don't want to use the standard numbers
         config["number"][0] = InputCheckNumber(                                     # Decides the first player number
             "Insert the first number:\n")
         config["number"][1] = InputCheckNumber(                                     # Decides the seconf player number

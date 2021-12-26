@@ -35,11 +35,6 @@ Download the [Utility's Library](https://github.com/DemonDonny3/Python/tree/main
 wget https://github.com/DemonDonny3/Python/tree/main/Exercises%20and%20Training/Utility/Library
 ```
 
-Import the Utility's Librarylity:
-```
-mv Library Template
-```
-
 Run the script:
 
 ```

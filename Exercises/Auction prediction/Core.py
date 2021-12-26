@@ -1,12 +1,12 @@
 import random
 
 
-def Core(config:  dict) -> str:
+def Core(config: dict) -> str:
     Auction(config)
     return
 
 
-def Auction(config:  dict) -> str:
+def Auction(config: dict) -> str:
     prediction = [config["max"] / config["relationship"]]
     file = open(config["save"][0], config["save"][1])
     averageList = {}

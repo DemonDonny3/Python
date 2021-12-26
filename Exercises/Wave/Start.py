@@ -1,4 +1,5 @@
-from Utility.Library.InputCheck import *
+from Library.InputCheck import *    # Import the custom library for checking the input
+from Library.AskForEnd import *     # Import the custom library for ask how to end the program
 
 config = {
     "caracter": ["-", " "],      # Character used foe deawing the wave
@@ -17,7 +18,7 @@ def Start() -> dir:
                           "")
     if(not start):
         AskStart()
-        AskEnd()
+        AskEnd(config)
         print()
     return config
 
@@ -48,21 +49,4 @@ def AskStart():
         config["players"][1] = InputCheckLength(                                                                            # Decides the seconf player character
             "Insert the caracter for the background:\n", [config["caracter"][0]], 1)
     return
-
-
-def AskEnd():
-    config["visible"] = InputCheckBool("Select if you want to watch the process or not, type for:\n" +
-                                      "Y) Yes;\n" +
-                                      "N) No;\n",
-                                      ["Y", "N"])
-
-    start = InputCheckBool("Select if you want to save the process or not, type for:\n" +
-                          "Y) Yes;\n" +
-                          "N) No;\n",
-                          ["Y", "N"])
-    if(start):
-        path = InputCheckPath("Tell me the path where to save records")
-        start = InputCheckFile("Tell me the file name, the file extension (.txt) will be added automatically")
-        path += start[0]
-        config["save"] = [path, start[1]]
-    return
+    

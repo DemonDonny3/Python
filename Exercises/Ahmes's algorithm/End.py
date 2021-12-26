@@ -24,5 +24,5 @@ def Ending(config:  dict, result: list[object]):
             for i in result[1]:                                 # For all lines
                 file.write(i)                                   # I write the line
             file.write(result[0])                               # Write the final result
-            file.close()                                        #
+            file.close()                                        # The file is closed
     return 

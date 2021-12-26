@@ -31,22 +31,10 @@ No plugins have been used
  ┃ ┣📂Frogs game
  ┃ ┣📂Tic-Tac-Toe
  ┃ ┣📂Tria
- ┃ ┣📂Wave
- ┃ ┣📜.gitignore
- ┃ ┗📜README.md
+ ┃ ┗📂Wave
  ┣📂Utility
  ┃ ┣📂Library
- ┃ ┃ ┣📜InputCheck.py
- ┃ ┃ ┣📜LICENSE
- ┃ ┃ ┗📜README.md
- ┃ ┣📂Template
- ┃ ┃ ┣📜Core.py
- ┃ ┃ ┣📜End.py
- ┃ ┃ ┣📜LICENSE
- ┃ ┃ ┣📜Main.py
- ┃ ┃ ┣📜README.md
- ┃ ┃ ┗📜Start.py
- ┃ ┗📜README.md
+ ┃ ┗📂Template
  ┣📜.gitignore
  ┣📜LICENSE
  ┗📜README.md

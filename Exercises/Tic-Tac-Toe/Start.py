@@ -16,7 +16,8 @@ def Start() -> dir:
     start = InputCheckBool("Do you want to use the standard config?\n" +
                           "Y) Yes;\n" +
                           "N) No;\n",
-                          ["Y", "N"])
+                          ["Y", "N"],
+                          "")
     if(start):
         AskStart()
         AskEnd()
